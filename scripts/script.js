@@ -1,6 +1,8 @@
-const expandButton = document.querySelector('header button')
-expandButton.addEventListener('click', expand)
+function myFunction() {
+  var element = document.body;
+  element.classList.darkmode("dark-mode");
+} 
 
-function expand () {
-  document.body.classList.toggle('expand')
+function changeImage('assets/lightmode.png') {
+  document.getElementById("assets/lightmode.png").src=a.src;
 }
