@@ -1,0 +1,30 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 130vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #991616;
+    background-color: red;
+  }
+
+.image {
+    position:absolute;
+    align-content: center;
+}
+
+h2 
+{
+    text-align: center;
+}
+
+p 
+{
+    text-align: center;
+    color:aqua
+}
+
+head {
+    font-family: Arial, Helvetica, sans-serif;
+    scale: 200px;
+}
