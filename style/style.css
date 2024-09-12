@@ -1,30 +1,81 @@
-body {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 130vh;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #991616;
-    background-color: red;
-  }
-
-.image {
-    position:absolute;
-    align-content: center;
-}
-
-h2 
-{
-    text-align: center;
-}
-
-p 
-{
-    text-align: center;
-    color:aqua
-}
-
 head {
+    scale: 200%;
+}
+
+@font-face {
+    font-family: 'Garet';
+    src: url(/Users/Miel\ van\ Sleeuwen/downloads/Garet));
+}
+
+body {
+    color:rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
-    scale: 200px;
+    margin: 2em;
+}
+
+html {
+    background-color: #050542;
+}
+
+.topnav {
+    background-color: #7373da;
+    position: relative;
+    margin: 10px;
+    right: 10px;
+    height: 60px;
+    width: 100%;
+    font-size: 24px;
+}
+
+.topnav a {
+    float: left;
+    color:black;
+    padding: 2em 1em;
+    text-decoration: wavy;
+    font-size: 18px;
+}
+
+.topnav a:hover {
+    background-color: #050542;
+    color:azure;
+}
+
+.topnav a.active {
+    background-color: black;
+    color: white;
+}
+
+.grid-container {
+    display: grid;
+    gap: 2em;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows:250px;
+
+}
+
+.week1 {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.book {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+}
+
+.ul {
+    color: #050542;
+    background-color: #66e5bf;
+    border-radius: 1em;
+    margin: 1em;
+    margin-block: 2em;
+}
+
+.intro {
+    background-color:rgb(145, 145, 145);
+}
+
+@media only screen and (min-width: 768px)  {
+    grid-template-columns: 1fr, 1fr, 1fr, 1fr;
 }
