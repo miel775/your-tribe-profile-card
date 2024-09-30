@@ -2,15 +2,20 @@ head {
     scale: 200%;
 }
 
-@font-face {
-    font-family: 'Garet';
-    src: url(/Users/Miel\ van\ Sleeuwen/downloads/Garet));
-}
-
 body {
     color:rgb(255, 255, 255);
     font-family: Arial, Helvetica, sans-serif;
     margin: 2em;
+}
+p {
+    padding-left: 10px;
+}
+
+h1 {
+    padding-left: 10px;
+}
+h2 {
+    padding-left: 10px;
 }
 
 html {
@@ -22,7 +27,7 @@ html {
     position: relative;
     margin: 10px;
     right: 10px;
-    height: 60px;
+    height: 93px;
     width: 100%;
     font-size: 24px;
 }
@@ -50,10 +55,10 @@ html {
     gap: 2em;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
     grid-template-rows:250px;
-
 }
 
 .week1 {
+    padding-top: 10vh;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
 }
@@ -76,6 +81,112 @@ html {
     background-color:rgb(145, 145, 145);
 }
 
+.gradient {
+    height: 100vh;
+    background-image: linear-gradient(to left,#000000,#050542 );
+    background-size: 300%;
+    background-position: right;
+    transition: background-position 1s;
+    text-align: center;
+    padding-top: 10px;
+    z-index: -2;
+}
+
+.gradient:hover,
+.gradient:focus {
+    background-position: left;
+}
+
+
 @media only screen and (min-width: 768px)  {
     grid-template-columns: 1fr, 1fr, 1fr, 1fr;
 }
+
+.imgcontrol {
+    display: block;
+    position: absolute;
+    z-index: 1;
+    align-content: center;
+    left: 40%;
+    bottom: -10%
+}
+
+.imgcontrol2 {
+    display: block;
+    position: absolute;
+    z-index: 2;
+    left: 40%;
+    bottom: -10%;
+}
+
+.imgcontrol2:hover {
+    display: block;
+    background-position: 10px 0;
+    animation-name: hover;
+    animation-duration: 0.3s infinite;
+}
+
+@keyframes hover {
+    0% {
+        background-position:0;
+    }
+    100% {
+        background-position:60px;
+    }
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, auto); 
+    gap: 20px; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.iphone-container, .iphone-container2, .iphone-container3 {
+    width: 200px; 
+    position: relative;
+}
+
+.iphoneoff, .iphoneoff2, .iphoneoff3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: block;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.iphone, .iphone2, .iphone3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.iphone-container:hover .iphoneoff, 
+.iphone-container2:hover .iphoneoff2, 
+.iphone-container3:hover .iphoneoff3 {
+    opacity: 0;
+}
+
+.iphone-container:hover .iphone, 
+.iphone-container2:hover .iphone2, 
+.iphone-container3:hover .iphone3 {
+    opacity: 1;
+}
+
+.familymart {
+    margin-left: 400px;
+}
+
+.iphone-container2 {
+    margin: 0px 400px;
+}
+
+.iphone-container3 {
+    margin: 0px 800px;
+}
+
